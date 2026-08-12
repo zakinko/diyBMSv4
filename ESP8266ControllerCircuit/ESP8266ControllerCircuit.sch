@@ -155,10 +155,10 @@ L Isolator:PC817 U2
 U 1 1 5CD55A2D
 P 3960 5110
 F 0 "U2" H 3960 5435 50  0000 C CNN
-F 1 "EL3H7(B)(TA)-G" H 3960 5344 50  0000 C CNN
+F 1 "EL3H7B" H 3960 5344 50  0000 C CNN
 F 2 "Housings_SSOP:SOP-4_4.4x2.8mm_Pitch1.27mm" H 3760 4910 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-EL3H7-B-TA-G_C32565.pdf" H 3960 5110 50  0001 L CNN
-F 4 "C32565" H 3960 5110 50  0001 C CNN "LCSCStockCode"
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2409021207_AOTE-EL3H7B_C41371267.pdf" H 3960 5110 50  0001 L CNN
+F 4 "C41371267" H 3960 5110 50  0001 C CNN "LCSCStockCode"
 	1    3960 5110
 	1    0    0    -1  
 $EndComp
