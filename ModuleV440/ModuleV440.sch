@@ -21,7 +21,7 @@ F 0 "ATTINY841" H 1525 3356 50  0000 R CNN
 F 1 "ATtiny841-SSU" H 1525 3265 50  0000 R CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2055 3310 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8495-8-bit-AVR-Microcontrollers-ATtiny441-ATtiny841_Datasheet.pdf" H 2055 3310 50  0001 C CNN
-F 4 "C219103" H 2055 3310 50  0001 C CNN "LCSCStockCode"
+F 4 "C614879" H 2055 3310 50  0001 C CNN "LCSCStockCode"
 	1    2055 3310
 	1    0    0    -1  
 $EndComp
@@ -282,8 +282,8 @@ P 9640 4960
 F 0 "U1" H 9640 5285 50  0000 C CNN
 F 1 "EL3H7(B)(TA)-G" H 9640 5194 50  0000 C CNN
 F 2 "Package_SO:SOP-4_4.4x2.6mm_P1.27mm" H 9440 4760 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-EL3H7-B-TA-G_C32565.pdf" H 9640 4960 50  0001 L CNN
-F 4 "C32565" H 9640 4960 50  0001 C CNN "LCSCStockCode"
+F 3 "https://www.lcsc.com/datasheet/lcsc_datasheet_2409021207_AOTE-EL3H7B_C41371267.pdf" H 9640 4960 50  0001 L CNN
+F 4 "C41371267" H 9640 4960 50  0001 C CNN "LCSCStockCode"
 F 5 "EL3H7(B)(TA)-G" H 9640 4960 50  0001 C CNN "PartNumber"
 F 6 "90" H 9640 4960 50  0001 C CNN "JLCPCBRotation"
 	1    9640 4960
