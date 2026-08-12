@@ -170,6 +170,10 @@ outputs:
       output: '%f_bom_jlc.%x'
         # exclude_filter: only_jlc_parts
       ref_separator: ','
+      # Without LCSCStockCode in the key, C1 and C3 group together and the part
+      # number column ends up holding both codes separated by a space, which
+      # JLCPCB cannot read.
+      group_fields: ['Value', 'Footprint', 'LCSCStockCode']
       columns:
         - field: Value
           name: Comment
