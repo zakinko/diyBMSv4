@@ -10,6 +10,54 @@ If you are looking for version 3 (obsolete) of this project take a look [here](h
 
 THIS REPOSITORY CONTAINS THE HARDWARE FOR THE SYSTEM
 
+---
+
+## About this branch — keeping the boards orderable
+
+This is a fork of [stuartpittaway/diyBMSv4](https://github.com/stuartpittaway/diyBMSv4).
+Every LCSC part number in every BOM here was checked against the JLCPCB parts API,
+and **eight of the eleven boards could not be ordered as they stood** - parts at zero
+stock, parts the API reports as discontinued, and on one board a BOM cell holding two
+part numbers at once.  This branch fixes what can be fixed by changing a part number,
+and says plainly where that is not enough.
+
+**What is maintained**
+
+* Part numbers that JLCPCB no longer stocks are replaced, where an equivalent exists
+* Where the same part number also exists in the Basic library, it is used - Basic and
+  Preferred parts carry no per-type setup fee
+* Where no equivalent exists, the part is left alone and the reason is in the commit
+
+**What is not**
+
+* **Nothing here is tested on hardware.**  These are file-level changes checked
+  against the schematic, the netlist, the datasheets and the parts API, and no
+  further.  Reports from anyone who builds one are very welcome
+* The circuits are not being redesigned.  Where a board has a weakness that needs a
+  layout change - the ESP8266 controller has no decoupling capacitors at all, and no
+  clamp on the ESP's RX line - it is written down, not fixed
+
+**Two boards cannot be reproduced exactly, and are not pretended otherwise**
+
+V440 and V450 both use AZ432 for their voltage reference.  Diodes discontinued it -
+the datasheet is stamped OBSOLETE - USE AZ431L - and every SOT-23 shunt reference
+still stocked is 1.240V rather than 1.250V.  On both boards that reference sets the
+cell measurement, so substituting it shifts every reading by 0.8% with no warning.
+
+D1 is therefore left as AZ432 on both.  Order the board without it and fit it by
+hand; it is out of production but was made in volume and still turns up.  Anyone who
+would rather have a current part than an exact V440/V450 should look at a revision
+that designs AZ431L in and changes the firmware constant to match.
+
+V400 is untouched for a different reason: its schematic carries no LCSC part numbers
+at all and no BOM is generated from it.  Its parts are listed in a separate
+spreadsheet, so making it orderable means building a BOM rather than editing one.
+
+Upstream's own README follows unchanged.
+
+---
+
+
 # Videos on how to use and build
 
 [YouTube playlist](https://youtube.com/playlist?list=PLHhwQCDPuRcZW3u0jJucsiCCsUbNbMy-c) for DIYBMS videos
