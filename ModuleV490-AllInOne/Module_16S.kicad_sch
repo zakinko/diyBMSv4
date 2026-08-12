@@ -4797,7 +4797,7 @@
     (property "Datasheet" "https://www.microchip.com/en-us/product/mcp33151-05" (at 241.3 80.645 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSCStockCode" "C635984" (at 250.19 93.345 0)
+    (property "LCSCStockCode" "C627094" (at 250.19 93.345 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "PartNumber" "MCP33151-05-E/MS" (at 250.19 93.345 0)
